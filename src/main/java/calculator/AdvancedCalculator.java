@@ -5,7 +5,7 @@ import calculator.operations.Multiplication;
 
 public class AdvancedCalculator extends Calculator {
     public AdvancedCalculator() {
-        operations.put('*', new Multiplication());
-        operations.put('/', new Division());
+        operations.put(ArithmeticOperator.MULTIPLICATION, new Multiplication());
+        operations.put(ArithmeticOperator.DIVISION, new Division());
     }
 }
