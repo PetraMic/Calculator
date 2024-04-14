@@ -6,5 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Calculator {
-    Map<ArithmeticOperator, Operation> operations = new HashMap<>();
+    public Map<ArithmeticOperator, Operation> operations = new HashMap<>();
+
+    public abstract String calculate(ArithmeticOperator operator, double a, double b);
 }
